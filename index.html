@@ -605,7 +605,7 @@
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
                                         style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="fuelTier"
-                                            value="10" checked />
+                                            value="6" checked />
                                         <span><strong>$6</strong> - Buys one gallon of diesel.</span>
                                     </label>
                                     <label
@@ -767,6 +767,41 @@
             </div>
         </header>
 
+        <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content overflow-hidden border-0 shadow-lg">
+
+                    <div id="modalBg" class="position-relative p-5 text-center text-white" style="
+                background-size: cover;
+                background-position: center;
+                min-height: 350px;
+              ">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.75"></div>
+
+                        <div class="position-relative z-1 d-flex flex-column justify-content-center h-100">
+                            <h2 class="display-5 fw-bold mb-3 text-light" id="thankYouModalLabel">
+                                Thank You!
+                            </h2>
+                            <p class="lead mb-2 text-light">
+                                Your contribution helps keep the intercept teams safe and on
+                                the road.
+                            </p>
+
+                            <p class="mb-4 text-warning fw-bold fs-5" id="donationDetails"></p>
+
+                            <div>
+                                <button type="button" class="btn btn-outline-light px-5 py-2 fw-bold rounded-pill"
+                                    data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <footer class="bg-dark text-white py-5 mt-auto border-top border-secondary">
             <div class="container-fluid px-4 px-md-5">
                 <div class="row g-4 text-start">
@@ -863,6 +898,90 @@
                     applyTheme("system");
                 }
             });
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const donationImages = [
+                "images/Grid/tiv-2-build-photos-v0-7azoa8n2m9sd1.jpg",
+                "images/Grid/TornadoAlley-web.jpg",
+                "images/Grid/GettyImages-89510934.jpg",
+                "images/Grid/images.jpg",
+                "images/Special/ROSTY.jpg",
+            ];
+
+            const thankYouModalEl = document.getElementById("thankYouModal");
+
+            if (typeof bootstrap !== "undefined" && thankYouModalEl) {
+                const thankYouModal = new bootstrap.Modal(thankYouModalEl);
+                const modalBg = document.getElementById("modalBg");
+                const donationDetails = document.getElementById("donationDetails");
+
+                const donateButtons = document.querySelectorAll(
+                    "#donations .btn-danger",
+                );
+
+                donateButtons.forEach((button) => {
+                    button.addEventListener("click", function (e) {
+                        e.preventDefault();
+
+                        const card = this.closest(".card");
+                        let bgImage = "";
+                        let categoryName = "Custom Donation";
+                        let amount = 0;
+
+                        if (card) {
+
+                            const cardTitle = card.querySelector(".card-title");
+                            if (cardTitle) {
+                                categoryName = cardTitle.innerText.trim();
+                            }
+
+                            const cardImg = card.querySelector(".card-img-top");
+
+                            if (cardImg) {
+
+                                bgImage = cardImg.getAttribute("src");
+                            } else {
+
+                                const randomIndex = Math.floor(
+                                    Math.random() * donationImages.length,
+                                );
+                                bgImage = donationImages[randomIndex];
+                            }
+
+                            const customInput = card.querySelector(
+                                'input[name="customAmount"]',
+                            );
+
+                            if (customInput) {
+                                amount = parseInt(customInput.value);
+
+                                if (!amount || amount <= 0) {
+                                    alert("Please enter a valid custom donation amount.");
+                                    return;
+                                }
+
+                                customInput.value = "";
+                            } else {
+
+                                const checkedRadio = card.querySelector(
+                                    'input[type="radio"]:checked',
+                                );
+                                if (checkedRadio) {
+                                    amount = checkedRadio.value;
+                                }
+                            }
+                        }
+
+                        modalBg.style.backgroundImage = `url('${bgImage}')`;
+
+                        donationDetails.innerText = `Fund Supported: ${categoryName} \n Donation Amount: $${amount}.00`;
+
+                        thankYouModal.show();
+                    });
+                });
+            }
+        });
     </script>
 </body>
 
