@@ -1,0 +1,464 @@
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InterceptInfo - FAQ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .faq-hero {
+            background:
+                linear-gradient(to right,
+                    rgba(33, 37, 41, 0.9),
+                    rgba(33, 37, 41, 0.7)),
+                url("images/Grid/GettyImages-89510934.jpg") center/cover;
+            color: white;
+            padding: 4rem 2rem;
+            border-bottom: 5px solid #dc3545;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #f8d7da;
+            color: #842029;
+            font-weight: bold;
+        }
+
+        [data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+            background-color: #4c1d22;
+            color: #ea868f;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100 p-0">
+    <div class="container-fluid p-0 d-flex flex-column flex-grow-1">
+        <header>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <img src="images/Logo/be207ecd2a24e89612dbcf218e402bb2.jpg" alt="InterceptInfo Logo"
+                        style="width: 40px" class="rounded-pill" />
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item border rounded m-1">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item border rounded m-1">
+                                <a class="nav-link" href="index.html#database">Active Vehicles</a>
+                            </li>
+                            <li class="nav-item border rounded m-1">
+                                <a class="nav-link" href="index.html#database">Inactive Vehicles</a>
+                            </li>
+                            <li class="nav-item border rounded m-1">
+                                <a class="nav-link" href="index.html#history">History</a>
+                            </li>
+                            <li class="nav-item border rounded m-1">
+                                <a class="nav-link" href="index.html#donations">Donations</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown m-1">
+                                <a class="nav-link dropdown-toggle px-3" href="#" role="button"
+                                    data-bs-toggle="dropdown">
+                                    &#9776;
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                    <li>
+                                        <a class="dropdown-item" href="Settings.html">Settings</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-grow-1">
+            <div class="faq-hero text-center mb-5">
+                <h1 class="display-4 fw-bold">Frequently Asked Questions</h1>
+                <p class="lead">
+                    Everything you need to know about extreme storm intercept vehicles,
+                    their engineering, and how we track them.
+                </p>
+            </div>
+
+            <div class="container mb-5" style="max-width: 900px">
+                <div class="accordion shadow-sm" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                1. What is the purpose of InterceptInfo?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                InterceptInfo is a dedicated database tracking the world's
+                                most advanced storm intercept vehicles. We document their
+                                complex engineering, track their deployment history, and
+                                maintain live statuses of heavily modified machines built to
+                                survive extreme weather events.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                2. Who created the original TIV-1, and why was it built?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The Tornado Intercept Vehicle 1 (TIV-1) was constructed by
+                                Sean Casey in 2003. Its primary mission was to safely
+                                transport an IMAX camera directly into the path of a low-level
+                                tornado to capture documentary footage.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                3. Is the original TIV-1 still actively chasing?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                No, the TIV-1 is no longer actively chasing storms and is
+                                currently listed in our Inactive Vehicles database.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                4. How does the Dominator 1 withstand extreme winds without
+                                heavy ground spikes?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Created by Reed Timmer, the Dominator 1 focuses strictly on
+                                aerodynamics rather than anchoring. It features a sloped outer
+                                shell that forces oncoming winds over the vehicle, effectively
+                                pinning it to the ground during a severe storm.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                5. What kind of chassis is the Dominator 1 built upon?
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The Dominator 1 is heavily modified from a base 2007 Chevrolet
+                                Tahoe chassis.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                6. What defensive systems does the TIV-2 utilize?
+                            </button>
+                        </h2>
+                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Built to address weight and speed issues of its predecessor,
+                                the TIV-2 utilizes a full 4-side hydraulic skirt system that
+                                seals completely to the ground surface, along with 40-inch
+                                ground-penetrating steel spikes to anchor the vehicle against
+                                200+ mph winds.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading7">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                7. Who currently owns the TIV-2?
+                            </button>
+                        </h2>
+                        <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                While TIV-2 was originally created and owned by Sean Casey,
+                                its current owner is Ryan Shepard.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading8">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                8. How heavy is the original TIV-1?
+                            </button>
+                        </h2>
+                        <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The original TIV-1 weighs approximately 15,000 lbs (or 7.5
+                                tons), making it the heaviest vehicle documented in our active
+                                or inactive databases.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading9">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                9. Why is fuel such a major expense for storm chasers?
+                            </button>
+                        </h2>
+                        <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Heavy custom trucks like the TIV or Dominator get very low gas
+                                mileage while idling for hours or driving thousands of miles
+                                across the plains. For example, the TIV-1 operates at about
+                                8.3 mpg, while the Dominator 3 gets an estimated 1 mile per
+                                gallon during specific operations. You can help support this
+                                via our Tornado Alley Fuel Fund.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading10">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                10. What makes the Dominator 3 unique compared to previous
+                                models?
+                            </button>
+                        </h2>
+                        <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The Dominator 3, based on a massive 2013 Ford F-350 Super Duty
+                                chassis, features automated hydraulic gull-wing doors and a
+                                highly advanced air suspension system. When deployed, the
+                                entire vehicle lowers flush to the ground, eliminating
+                                underbody wind flow entirely.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading11">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                11. What is the top speed of the Dominator 3?
+                            </button>
+                        </h2>
+                        <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Despite its size and 11,000 lbs weight, the Dominator 3 has a
+                                top speed of 80-110 mph (128.75-177.03 km/h).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading12">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                12. What does the Armor & Maintenance Fund cover?
+                            </button>
+                        </h2>
+                        <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Intercept vehicles take heavy hits from flying debris.
+                                Donations to this fund cover vital maintenance such as body
+                                repairs, replacing cracked bulletproof polycarbonate
+                                windshields, and performing hydraulic anchor maintenance.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading13">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                13. How do storm chasers broadcast live data safely from
+                                inside a tornado?
+                            </button>
+                        </h2>
+                        <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Field communications are essential. Chasers require strong
+                                mobile satellite internet, rugged cameras, and upgraded
+                                heavy-duty signal antennas to safely broadcast data and video
+                                from inside the tornado core.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading14">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                                14. What are scientific probes used for during intercepts?
+                            </button>
+                        </h2>
+                        <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Vehicles are outfitted with atmospheric sensors, external
+                                anemometers, and deployable ground probe shells (turtle
+                                probes) to record crucial meteorological data directly inside
+                                the tornado.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading15">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                                15. How can I change the color theme of the InterceptInfo
+                                website?
+                            </button>
+                        </h2>
+                        <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can customize the appearance of the website by clicking
+                                the menu icon in the top right corner and selecting
+                                "Settings". From there, you can easily toggle between Light
+                                Mode, Dark Mode, or matching your System Theme.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-dark text-white py-5 mt-auto border-top border-secondary">
+            <div class="container-fluid px-4 px-md-5">
+                <div class="row g-4 text-start">
+                    <div class="col-lg-4 col-md-6">
+                        <h6 class="text-uppercase fw-bold mb-3 text-light">Company</h6>
+                        <p class="small text-white-50 mb-3 pe-md-4">
+                            InterceptInfo is a dedicated database tracking the world's most
+                            advanced storm intercept vehicles. We document the engineering,
+                            history, and active status of the heavily modified machines
+                            built to survive extreme weather.
+                        </p>
+                        <a href="About.html"
+                            class="text-white-50 text-decoration-none small fw-semibold hover-white">About Us &rarr;</a>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="text-uppercase fw-bold mb-3 text-light">Resources</h6>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2">
+                                <a href="FAQ.html" class="text-white-50 text-decoration-none hover-white">FAQ</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="PrivacyPolicy.html"
+                                    class="text-white-50 text-decoration-none hover-white">Privacy Policy</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="TermsOfService.html"
+                                    class="text-white-50 text-decoration-none hover-white">Terms of Service</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://bit-jpg.github.io/a-website/rusty.html"
+                                    class="text-white-50 text-decoration-none hover-white">Special Mention</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="text-uppercase fw-bold mb-3 text-light">Contact</h6>
+                        <ul class="list-unstyled small text-white-50">
+                            <li class="mb-2 text-light fw-semibold">
+                                InterceptInfo Administration
+                            </li>
+                            <li class="mb-2">
+                                123 Storm Chaser Blvd.<br />Tornado Alley, TX 79001
+                            </li>
+                            <li class="mb-2">Phone: +1 (555) 019-8472</li>
+                            <li class="mb-2">Email: contact@interceptinfo.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 text-lg-end">
+                        <p class="small text-white-50 mb-1">© 2026 InterceptInfo</p>
+                        <p class="small text-white-50">All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function getSystemTheme() {
+            return window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+        }
+
+        function applyTheme(theme) {
+            if (theme === "system") {
+                document.documentElement.setAttribute(
+                    "data-bs-theme",
+                    getSystemTheme(),
+                );
+            } else {
+                document.documentElement.setAttribute("data-bs-theme", theme);
+            }
+        }
+
+        const savedTheme = localStorage.getItem("user-theme") || "system";
+        applyTheme(savedTheme);
+
+        window
+            .matchMedia("(prefers-color-scheme: dark)")
+            .addEventListener("change", () => {
+                if (
+                    localStorage.getItem("user-theme") === "system" ||
+                    !localStorage.getItem("user-theme")
+                ) {
+                    applyTheme("system");
+                }
+            });
+    </script>
+</body>
+
+</html>

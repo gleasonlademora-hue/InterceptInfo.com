@@ -25,7 +25,6 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
                         <ul class="navbar-nav">
                             <li class="nav-item border rounded m-1">
                                 <a class="nav-link" href="#">Home</a>
@@ -53,7 +52,9 @@
                                     &#9776;
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="Settings.html">Settings</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="Settings.html">Settings</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -103,23 +104,26 @@
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active fw-bold text-success" id="active-tab" data-bs-toggle="tab"
                             data-bs-target="#active" type="button" role="tab" aria-controls="active"
-                            aria-selected="true">Active Vehicles</button>
+                            aria-selected="true">
+                            Active Vehicles
+                        </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link fw-bold text-danger" id="inactive-tab" data-bs-toggle="tab"
                             data-bs-target="#inactive" type="button" role="tab" aria-controls="inactive"
-                            aria-selected="false">Inactive Vehicles</button>
+                            aria-selected="false">
+                            Inactive Vehicles
+                        </button>
                     </li>
                 </ul>
 
                 <div class="tab-content" id="vehicleTabsContent">
-
                     <div class="tab-pane fade show active" id="active" role="tabpanel" aria-labelledby="active-tab">
                         <div class="row mx-auto g-4">
                             <div class="col-md-6">
                                 <div class="card h-100 shadow-sm border-0">
                                     <img src="images/Carosel/Tiv2.jpg" class="card-img-top" alt="TIV-2"
-                                        style="height: 300px; object-fit: cover;">
+                                        style="height: 300px; object-fit: cover" />
                                     <div class="card-body">
                                         <h4 class="card-title">TIV-2</h4>
                                         <h6 class="card-subtitle mb-3 text-success fw-bold">
@@ -136,7 +140,7 @@
                             <div class="col-md-6">
                                 <div class="card h-100 shadow-sm border-0">
                                     <img src="images/Carosel/Dom3.jpg" class="card-img-top" alt="Dominator 3"
-                                        style="height: 300px; object-fit: cover;">
+                                        style="height: 300px; object-fit: cover" />
                                     <div class="card-body">
                                         <h4 class="card-title">Dominator 3</h4>
                                         <h6 class="card-subtitle mb-3 text-success fw-bold">
@@ -158,16 +162,16 @@
                             <div class="col-md-6">
                                 <div class="card h-100 shadow-sm border-0">
                                     <img src="images/Carosel/Tiv1.jpg" class="card-img-top" alt="TIV-1"
-                                        style="height: 300px; object-fit: cover;">
+                                        style="height: 300px; object-fit: cover" />
                                     <div class="card-body">
                                         <h4 class="card-title">TIV-1</h4>
                                         <h6 class="card-subtitle mb-3 text-danger fw-bold">
                                             Status: INACTIVE
                                         </h6>
                                         <p class="card-text">
-                                            The original Tornado Intercept Vehicle based on a heavily
-                                            modified Ford F-450. Famous for capturing IMAX footage
-                                            inside a tornado.
+                                            The original Tornado Intercept Vehicle based on a
+                                            heavily modified Ford F-450. Famous for capturing IMAX
+                                            footage inside a tornado.
                                         </p>
                                     </div>
                                 </div>
@@ -175,7 +179,7 @@
                             <div class="col-md-6">
                                 <div class="card h-100 shadow-sm border-0">
                                     <img src="images/Carosel/Dom1.jpg" class="card-img-top" alt="Dominator 1"
-                                        style="height: 300px; object-fit: cover;">
+                                        style="height: 300px; object-fit: cover" />
                                     <div class="card-body">
                                         <h4 class="card-title">Dominator 1</h4>
                                         <h6 class="card-subtitle mb-3 text-danger fw-bold">
@@ -183,8 +187,8 @@
                                         </h6>
                                         <p class="card-text">
                                             A modified 2007 Chevy Tahoe. Introduced Lexan armor and
-                                            aerodynamic sloping to deflect wind over the vehicle rather
-                                            than anchoring into the ground.
+                                            aerodynamic sloping to deflect wind over the vehicle
+                                            rather than anchoring into the ground.
                                         </p>
                                     </div>
                                 </div>
@@ -195,10 +199,12 @@
             </div>
 
             <div id="history" class="container my-5">
-                <h3 class="text-center mb-4">Detailed Technical Specifications & History</h3>
+                <h3 class="text-center mb-4">
+                    Detailed Technical Specifications & History
+                </h3>
                 <div id="historyCarousel" class="carousel slide p-4 p-md-5 shadow-sm rounded border"
                     data-bs-ride="false">
-                    <div class="carousel-indicators" style="bottom: -20px;">
+                    <div class="carousel-indicators" style="bottom: -20px">
                         <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="0"
                             class="active"></button>
                         <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="1"></button>
@@ -206,47 +212,79 @@
                         <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="3"></button>
                     </div>
                     <div class="carousel-inner px-3 px-md-5 text-start pb-4">
-
                         <div class="carousel-item active">
                             <h4 class="text-center mb-4">TIV-1:</h4>
                             <div class="row g-4">
                                 <div class="col-md-5">
                                     <ul class="list-group list-group-flush border rounded small"
-                                        style="max-height: 290px; overflow-y: auto;">
-                                        <li class="list-group-item"><strong>Creator:</strong> Sean Casey</li>
-                                        <li class="list-group-item"><strong>Original Owner:</strong> Sean Casey</li>
-                                        <li class="list-group-item"><strong>Current Owner:</strong> Robert Clayton</li>
-                                        <li class="list-group-item"><strong>Base Chassis:</strong> 1997 Ford F-450 Super
-                                            Duty</li>
-                                        <li class="list-group-item"><strong>Powertrain:</strong> 2WD / 7.3L Power Stroke
-                                            Turbo Diesel V8 / ZF 5-speed manual transmission</li>
-                                        <li class="list-group-item"><strong>Horsepower:</strong> 215HP (160 kW) </li>
-                                        <li class="list-group-item"><strong>Torque:</strong> 425 lb-ft</li>
-                                        <li class="list-group-item"><strong>Top Speed:</strong> 65-80 mph (104.61-128.75
-                                            km/h)</li>
-                                        <li class="list-group-item"><strong>Fuel Specs:</strong> 8.3mpg / 60 gal (230L)
-                                            Tank / 500 miles (800km)</li>
-                                        <li class="list-group-item"><strong>Weight:</strong> ~15,000 lbs (7.5 Tons)</li>
-                                        <li class="list-group-item"><strong>Est. Wind Threshold:</strong> ~175 mph</li>
-                                        <li class="list-group-item"><strong>Armor Material:</strong> 1/4" Steel Plate &
-                                            Lexan</li>
+                                        style="max-height: 290px; overflow-y: auto">
+                                        <li class="list-group-item">
+                                            <strong>Creator:</strong> Sean Casey
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Original Owner:</strong> Sean Casey
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Current Owner:</strong> Robert Clayton
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Base Chassis:</strong> 1997 Ford F-450 Super
+                                            Duty
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Powertrain:</strong> 2WD / 7.3L Power Stroke
+                                            Turbo Diesel V8 / ZF 5-speed manual transmission
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Horsepower:</strong> 215HP (160 kW)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Torque:</strong> 425 lb-ft
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Top Speed:</strong> 65-80 mph (104.61-128.75
+                                            km/h)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Fuel Specs:</strong> 8.3mpg / 60 gal (230L) Tank
+                                            / 500 miles (800km)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Weight:</strong> ~15,000 lbs (7.5 Tons)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Est. Wind Threshold:</strong> ~175 mph
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Armor Material:</strong> 1/4" Steel Plate &
+                                            Lexan
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-md-7">
                                     <h5>Vehicle Overview & History</h5>
-                                    <p>The Tornado Intercept Vehicle 1 (TIV-1) was constructed by Sean Casey in
-                                        2003. Built upon a 1997 Ford F-450 Super Duty chassis, it featured heavy steel
-                                        armor and
-                                        bullet-resistant windows designed to withstand the violent debris of a low-level
-                                        tornado. Its primary mission was to carry an IMAX camera directly into the path
-                                        of a
-                                        twister for documentary filmmaking.</p>
+                                    <p>
+                                        The Tornado Intercept Vehicle 1 (TIV-1) was constructed by
+                                        Sean Casey in 2003. Built upon a 1997 Ford F-450 Super
+                                        Duty chassis, it featured heavy steel armor and
+                                        bullet-resistant windows designed to withstand the violent
+                                        debris of a low-level tornado. Its primary mission was to
+                                        carry an IMAX camera directly into the path of a twister
+                                        for documentary filmmaking.
+                                    </p>
                                     <h5>Unique Traits & Features</h5>
                                     <ul>
-                                        <li>360-degree rotating turret housing a custom IMAX film camera setup.</li>
-                                        <li>Rear drop-down protective rubber/steel skirts to prevent undercarriage wind
-                                            lift.</li>
-                                        <li>Heavy-duty leaf spring reinforcement to support the massive steel frame.
+                                        <li>
+                                            360-degree rotating turret housing a custom IMAX film
+                                            camera setup.
+                                        </li>
+                                        <li>
+                                            Rear drop-down protective rubber/steel skirts to prevent
+                                            undercarriage wind lift.
+                                        </li>
+                                        <li>
+                                            Heavy-duty leaf spring reinforcement to support the
+                                            massive steel frame.
                                         </li>
                                     </ul>
                                 </div>
@@ -258,44 +296,72 @@
                             <div class="row g-4">
                                 <div class="col-md-5">
                                     <ul class="list-group list-group-flush border rounded small"
-                                        style="max-height: 290px; overflow-y: auto;">
-                                        <li class="list-group-item"><strong>Creator:</strong> Sean Casey</li>
-                                        <li class="list-group-item"><strong>Original Owner:</strong> Sean Casey</li>
-                                        <li class="list-group-item"><strong>Current Owner:</strong> Ryan Shepard</li>
-                                        <li class="list-group-item"><strong>Base Chassis:</strong> 2008 Dodge Ram 3500
+                                        style="max-height: 290px; overflow-y: auto">
+                                        <li class="list-group-item">
+                                            <strong>Creator:</strong> Sean Casey
                                         </li>
-                                        <li class="list-group-item"><strong>Powertrain:</strong> 6x6 (Custom Axles) /
-                                            6.7L Cummins Turbo Diesel / heavy-duty automatic transmission</li>
-                                        <li class="list-group-item"><strong>Horsepower:</strong> 625HP (466 kW) </li>
-                                        <li class="list-group-item"><strong>Torque:</strong> 1,200+ lb-ft</li>
-                                        <li class="list-group-item"><strong>Top Speed:</strong> 100+ mph (160+ km/h)
+                                        <li class="list-group-item">
+                                            <strong>Original Owner:</strong> Sean Casey
                                         </li>
-                                        <li class="list-group-item"><strong>Fuel Specs:</strong> 11-12 mpg / 92 gal
-                                            (348L) Tank / 750 miles (1,210km)</li>
-                                        <li class="list-group-item"><strong>Weight:</strong> ~14,300 lbs (7.15 Tons)
+                                        <li class="list-group-item">
+                                            <strong>Current Owner:</strong> Ryan Shepard
                                         </li>
-                                        <li class="list-group-item"><strong>Est. Wind Threshold:</strong> 200+ mph</li>
-                                        <li class="list-group-item"><strong>Armor Material:</strong> Steel tubing skin,
-                                            composite armour & 1.63 inch Lexan</li>
+                                        <li class="list-group-item">
+                                            <strong>Base Chassis:</strong> 2008 Dodge Ram 3500
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Powertrain:</strong> 6x6 (Custom Axles) / 6.7L
+                                            Cummins Turbo Diesel / heavy-duty automatic transmission
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Horsepower:</strong> 625HP (466 kW)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Torque:</strong> 1,200+ lb-ft
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Top Speed:</strong> 100+ mph (160+ km/h)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Fuel Specs:</strong> 11-12 mpg / 92 gal (348L)
+                                            Tank / 750 miles (1,210km)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Weight:</strong> ~14,300 lbs (7.15 Tons)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Est. Wind Threshold:</strong> 200+ mph
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Armor Material:</strong> Steel tubing skin,
+                                            composite armour & 1.63 inch Lexan
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-md-7">
                                     <h5>Vehicle Overview & History</h5>
-                                    <p>Addressing the weight and top-speed issues of TIV-1, TIV-2 was engineered on
-                                        a Dodge Ram 3500 chassis. It features a sophisticated hydraulic skirt that drops
-                                        to
-                                        prevent wind from lifting the undercarriage, along with ground-penetrating steel
-                                        spikes.
-                                        TIV-2 successfully filmed inside a violent tornado in 2013, validating its
-                                        robust
-                                        aerodynamic and anchoring systems.</p>
+                                    <p>
+                                        Addressing the weight and top-speed issues of TIV-1, TIV-2
+                                        was engineered on a Dodge Ram 3500 chassis. It features a
+                                        sophisticated hydraulic skirt that drops to prevent wind
+                                        from lifting the undercarriage, along with
+                                        ground-penetrating steel spikes. TIV-2 successfully filmed
+                                        inside a violent tornado in 2013, validating its robust
+                                        aerodynamic and anchoring systems.
+                                    </p>
                                     <h5>Unique Traits & Features</h5>
                                     <ul>
-                                        <li>Hydraulic ground-penetrating spikes (40 inches long) to anchor into the
-                                            soil.</li>
-                                        <li>Full 4-side hydraulic skirts that seal completely to the ground surface.
+                                        <li>
+                                            Hydraulic ground-penetrating spikes (40 inches long) to
+                                            anchor into the soil.
                                         </li>
-                                        <li>Custom 6-wheel-drive configuration for enhanced mud and off-road traction.
+                                        <li>
+                                            Full 4-side hydraulic skirts that seal completely to the
+                                            ground surface.
+                                        </li>
+                                        <li>
+                                            Custom 6-wheel-drive configuration for enhanced mud and
+                                            off-road traction.
                                         </li>
                                     </ul>
                                 </div>
@@ -307,43 +373,70 @@
                             <div class="row g-4">
                                 <div class="col-md-5">
                                     <ul class="list-group list-group-flush border rounded small"
-                                        style="max-height: 290px; overflow-y: auto;">
-                                        <li class="list-group-item"><strong>Creator:</strong> Reed Timmer</li>
-                                        <li class="list-group-item"><strong>Owner:</strong> Reed Timmer / TVN</li>
-                                        <li class="list-group-item"><strong>Base Chassis:</strong> 2007 Chevrolet Tahoe
+                                        style="max-height: 290px; overflow-y: auto">
+                                        <li class="list-group-item">
+                                            <strong>Creator:</strong> Reed Timmer
                                         </li>
-                                        <li class="list-group-item"><strong>Powertrain:</strong> 4WD / GM Vortec 5.3L V8
-                                            Engine / standard automatic transmission</li>
-                                        <li class="list-group-item"><strong>Horsepower:</strong> 320-350HP (238.6-261.0
-                                            kW) </li>
-                                        <li class="list-group-item"><strong>Torque:</strong> 340 lb-ft</li>
-                                        <li class="list-group-item"><strong>Top Speed:</strong> 100-110 mph (160-177
-                                            km/h)</li>
-                                        <li class="list-group-item"><strong>Fuel Specs:</strong> 8-14 mpg / 26 gal
-                                            (98.4L) Tank / 250-300 miles (400-480 3km)</li>
-                                        <li class="list-group-item"><strong>Weight:</strong> ~8,500 lbs (4.25 Tons)</li>
-                                        <li class="list-group-item"><strong>Est. Wind Threshold:</strong> ~175 mph</li>
-                                        <li class="list-group-item"><strong>Armor Material:</strong> Line-X coated steel
-                                            & 1/2" Lexan</li>
+                                        <li class="list-group-item">
+                                            <strong>Owner:</strong> Reed Timmer / TVN
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Base Chassis:</strong> 2007 Chevrolet Tahoe
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Powertrain:</strong> 4WD / GM Vortec 5.3L V8
+                                            Engine / standard automatic transmission
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Horsepower:</strong> 320-350HP (238.6-261.0 kW)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Torque:</strong> 340 lb-ft
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Top Speed:</strong> 100-110 mph (160-177 km/h)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Fuel Specs:</strong> 8-14 mpg / 26 gal (98.4L)
+                                            Tank / 250-300 miles (400-480 3km)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Weight:</strong> ~8,500 lbs (4.25 Tons)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Est. Wind Threshold:</strong> ~175 mph
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Armor Material:</strong> Line-X coated steel &
+                                            1/2" Lexan
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-md-7">
                                     <h5>Vehicle Overview & History</h5>
-                                    <p>Created by Reed Timmer, Dominator 1 took a different approach by focusing
-                                        strictly on aerodynamics rather than pure weight and anchoring. Built from a
-                                        2007
-                                        Chevrolet Tahoe, it utilized tough Lexan polycarbonate armor and a sloped outer
-                                        shell.
-                                        This design forces oncoming winds over the vehicle, effectively pinning it to
-                                        the ground
-                                        during a severe storm.</p>
+                                    <p>
+                                        Created by Reed Timmer, Dominator 1 took a different
+                                        approach by focusing strictly on aerodynamics rather than
+                                        pure weight and anchoring. Built from a 2007 Chevrolet
+                                        Tahoe, it utilized tough Lexan polycarbonate armor and a
+                                        sloped outer shell. This design forces oncoming winds over
+                                        the vehicle, effectively pinning it to the ground during a
+                                        severe storm.
+                                    </p>
                                     <h5>Unique Traits & Features</h5>
                                     <ul>
-                                        <li>Custom Lexan windshield capable of withstanding high-velocity hail impact.
+                                        <li>
+                                            Custom Lexan windshield capable of withstanding
+                                            high-velocity hail impact.
                                         </li>
-                                        <li>Airbags/hydraulic lowering system that drops the front body to block
-                                            under-chassis wind.</li>
-                                        <li>Rhino/Line-X exterior protective spray coating against debris scour.</li>
+                                        <li>
+                                            Airbags/hydraulic lowering system that drops the front
+                                            body to block under-chassis wind.
+                                        </li>
+                                        <li>
+                                            Rhino/Line-X exterior protective spray coating against
+                                            debris scour.
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -354,48 +447,77 @@
                             <div class="row g-4">
                                 <div class="col-md-5">
                                     <ul class="list-group list-group-flush border rounded small"
-                                        style="max-height: 290px; overflow-y: auto;">
-                                        <li class="list-group-item"><strong>Creator:</strong> Reed Timmer</li>
-                                        <li class="list-group-item"><strong>Owner:</strong> Reed Timmer</li>
-                                        <li class="list-group-item"><strong>Base Chassis:</strong> 2013 Ford F-350 Super
-                                            Duty</li>
-                                        <li class="list-group-item"><strong>Powertrain:</strong> 4WD / 6.7L Power Stroke
-                                            Turbo Diesel V8 / heavy-duty six-speed automatic transmission</li>
-                                        <li class="list-group-item"><strong>Horsepower:</strong> 400HP (298.28kW) </li>
-                                        <li class="list-group-item"><strong>Torque:</strong> 800 lb-ft</li>
-                                        <li class="list-group-item"><strong>Top Speed:</strong> 80-110 mph
-                                            (128.75-177.03 km/h)</li>
-                                        <li class="list-group-item"><strong>Fuel Specs:</strong> 16-17 mpg / 37.5-48 gal
-                                            (141.95-181.70 L) Tank / est 1 mile (1.6 km) per gallon</li>
-                                        <li class="list-group-item"><strong>Weight:</strong> ~11,000 lbs (5.5 Tons)</li>
-                                        <li class="list-group-item"><strong>Est. Wind Threshold:</strong> 200+ mph</li>
-                                        <li class="list-group-item"><strong>Armor Material:</strong> 16-Gauge Steel,
-                                            Kevlar & 1.5" Lexan</li>
+                                        style="max-height: 290px; overflow-y: auto">
+                                        <li class="list-group-item">
+                                            <strong>Creator:</strong> Reed Timmer
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Owner:</strong> Reed Timmer
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Base Chassis:</strong> 2013 Ford F-350 Super
+                                            Duty
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Powertrain:</strong> 4WD / 6.7L Power Stroke
+                                            Turbo Diesel V8 / heavy-duty six-speed automatic
+                                            transmission
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Horsepower:</strong> 400HP (298.28kW)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Torque:</strong> 800 lb-ft
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Top Speed:</strong> 80-110 mph (128.75-177.03
+                                            km/h)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Fuel Specs:</strong> 16-17 mpg / 37.5-48 gal
+                                            (141.95-181.70 L) Tank / est 1 mile (1.6 km) per gallon
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Weight:</strong> ~11,000 lbs (5.5 Tons)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Est. Wind Threshold:</strong> 200+ mph
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Armor Material:</strong> 16-Gauge Steel, Kevlar
+                                            & 1.5" Lexan
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-md-7">
                                     <h5>Vehicle Overview & History</h5>
-                                    <p>The third iteration in the Dominator series was built on a massive
-                                        heavy-duty Ford F-350 chassis. It refined the aerodynamic principles of its
-                                        predecessors
-                                        while adding advanced features like automated gull-wing doors and an air
-                                        suspension
-                                        system. When fully deployed, the entire vehicle lowers flush to the ground,
-                                        eliminating
-                                        underbody wind flow completely.</p>
+                                    <p>
+                                        The third iteration in the Dominator series was built on a
+                                        massive heavy-duty Ford F-350 chassis. It refined the
+                                        aerodynamic principles of its predecessors while adding
+                                        advanced features like automated gull-wing doors and an
+                                        air suspension system. When fully deployed, the entire
+                                        vehicle lowers flush to the ground, eliminating underbody
+                                        wind flow completely.
+                                    </p>
                                     <h5>Unique Traits & Features</h5>
                                     <ul>
-                                        <li>Automated hydraulic gull-wing passenger doors for quick equipment access.
+                                        <li>
+                                            Automated hydraulic gull-wing passenger doors for quick
+                                            equipment access.
                                         </li>
-                                        <li>Air suspension drop system that lowers the vehicle chassis flush to the
-                                            ground.</li>
-                                        <li>Dual hydraulic ground spikes that stake deep into asphalt/soil for extreme
-                                            anchoring.</li>
+                                        <li>
+                                            Air suspension drop system that lowers the vehicle
+                                            chassis flush to the ground.
+                                        </li>
+                                        <li>
+                                            Dual hydraulic ground spikes that stake deep into
+                                            asphalt/soil for extreme anchoring.
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#historyCarousel"
                         data-bs-slide="prev">
@@ -411,17 +533,19 @@
             <div id="donations" class="container my-5">
                 <h3 class="text-center mb-4">Support Our Mission - Donations</h3>
                 <div class="row g-4">
-
                     <div class="col-lg-3 col-md-6">
                         <div class="card h-100 shadow-sm border">
                             <img src="images/Grid/tiv-2-build-photos-v0-7azoa8n2m9sd1.jpg" class="card-img-top"
-                                alt="Armor & Maintenance" style="height: 200px; object-fit: cover;" />
+                                alt="Armor & Maintenance" style="height: 200px; object-fit: cover" />
                             <div class="card-body d-flex flex-column p-4">
                                 <div class="mb-auto">
-                                    <h5 class="card-title fw-bold text-center mb-3">Armor & Maintenance Fund</h5>
+                                    <h5 class="card-title fw-bold text-center mb-3">
+                                        Armor & Maintenance Fund
+                                    </h5>
                                     <p class="card-text small text-muted mb-0">
-                                        Storm intercept vehicles take heavy hits from flying debris and high winds. This
-                                        fund covers body repairs, bulletproof polycarbonate windshields, and hydraulic
+                                        Storm intercept vehicles take heavy hits from flying
+                                        debris and high winds. This fund covers body repairs,
+                                        bulletproof polycarbonate windshields, and hydraulic
                                         anchor maintenance.
                                     </p>
                                 </div>
@@ -429,29 +553,33 @@
                                 <div class="mt-4">
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="armorTier"
                                             value="15" checked />
-                                        <span><strong>$15</strong> - Replaces a cracked polycarbonate window
-                                            bolt.</span>
+                                        <span><strong>$15</strong> - Replaces a cracked polycarbonate
+                                            window bolt.</span>
                                     </label>
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="armorTier"
                                             value="40" />
-                                        <span><strong>$40</strong> - Funds a sheet of steel armor patching.</span>
+                                        <span><strong>$40</strong> - Funds a sheet of steel armor
+                                            patching.</span>
                                     </label>
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="armorTier"
                                             value="100" />
-                                        <span><strong>$100</strong> - Covers major hydraulic reinforcement work.</span>
+                                        <span><strong>$100</strong> - Covers major hydraulic
+                                            reinforcement work.</span>
                                     </label>
                                 </div>
 
-                                <button class="btn btn-danger w-100 mt-3 fw-bold py-2">Donate</button>
+                                <button class="btn btn-danger w-100 mt-3 fw-bold py-2">
+                                    Donate
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -459,42 +587,48 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="card h-100 shadow-sm border">
                             <img src="images/Grid/TornadoAlley-web.jpg" class="card-img-top" alt="Fuel Fund"
-                                style="height: 200px; object-fit: cover;" />
+                                style="height: 200px; object-fit: cover" />
                             <div class="card-body d-flex flex-column p-4">
                                 <div class="mb-auto">
-                                    <h5 class="card-title fw-bold text-center mb-3">Tornado Alley Fuel Fund</h5>
+                                    <h5 class="card-title fw-bold text-center mb-3">
+                                        Tornado Alley Fuel Fund
+                                    </h5>
                                     <p class="card-text small text-muted mb-0">
-                                        Heavy custom trucks like the TIV or Dominator get very low mileage while idling
-                                        for hours or driving thousands of miles across the plains.
+                                        Heavy custom trucks like the TIV or Dominator get very low
+                                        mileage while idling for hours or driving thousands of
+                                        miles across the plains.
                                     </p>
                                 </div>
 
                                 <div class="mt-4">
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="fuelTier"
                                             value="10" checked />
-                                        <span><strong>$10</strong> - Buys one gallon of diesel.</span>
+                                        <span><strong>$6</strong> - Buys one gallon of diesel.</span>
                                     </label>
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="fuelTier"
                                             value="30" />
-                                        <span><strong>$30</strong> - Funds a quarter-tank for a chase day.</span>
+                                        <span><strong>$30</strong> - Funds a quarter-tank for a chase
+                                            day.</span>
                                     </label>
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="fuelTier"
                                             value="75" />
-                                        <span><strong>$75</strong> - Fills up a full tank for a high-risk intercept
-                                            run.</span>
+                                        <span><strong>$75</strong> - Fills up a full tank for a
+                                            high-risk intercept run.</span>
                                     </label>
                                 </div>
 
-                                <button class="btn btn-danger w-100 mt-3 fw-bold py-2">Donate</button>
+                                <button class="btn btn-danger w-100 mt-3 fw-bold py-2">
+                                    Donate
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -502,43 +636,49 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="card h-100 shadow-sm border">
                             <img src="images/Grid/GettyImages-89510934.jpg" class="card-img-top"
-                                alt="Scientific Probes & Sensors" style="height: 200px; object-fit: cover;" />
+                                alt="Scientific Probes & Sensors" style="height: 200px; object-fit: cover" />
                             <div class="card-body d-flex flex-column p-4">
                                 <div class="mb-auto">
-                                    <h5 class="card-title fw-bold text-center mb-3">Scientific Probes & Sensors</h5>
+                                    <h5 class="card-title fw-bold text-center mb-3">
+                                        Scientific Probes & Sensors
+                                    </h5>
                                     <p class="card-text small text-muted mb-0">
-                                        This fund covers the weather instruments, deployable turtle probes, and
-                                        atmospheric sensors mounted on the vehicles to record data inside the tornado.
+                                        This fund covers the weather instruments, deployable
+                                        turtle probes, and atmospheric sensors mounted on the
+                                        vehicles to record data inside the tornado.
                                     </p>
                                 </div>
 
                                 <div class="mt-4">
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="sensorTier"
                                             value="20" checked />
-                                        <span><strong>$20</strong> - Replaces an external anemometer wind cup.</span>
+                                        <span><strong>$20</strong> - Replaces an external anemometer
+                                            wind cup.</span>
                                     </label>
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="sensorTier"
                                             value="50" />
-                                        <span><strong>$50</strong> - Buys a backup temperature and pressure
-                                            sensor.</span>
+                                        <span><strong>$50</strong> - Buys a backup temperature and
+                                            pressure sensor.</span>
                                     </label>
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="sensorTier"
                                             value="120" />
-                                        <span><strong>$120</strong> - Funds a complete deployable ground probe
-                                            shell.</span>
+                                        <span><strong>$120</strong> - Funds a complete deployable
+                                            ground probe shell.</span>
                                     </label>
                                 </div>
 
-                                <button class="btn btn-danger w-100 mt-3 fw-bold py-2">Donate</button>
+                                <button class="btn btn-danger w-100 mt-3 fw-bold py-2">
+                                    Donate
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -546,41 +686,49 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="card h-100 shadow-sm border">
                             <img src="images/Grid/images.jpg" class="card-img-top" alt="Live Stream & Field Comms"
-                                style="height: 200px; object-fit: cover;" />
+                                style="height: 200px; object-fit: cover" />
                             <div class="card-body d-flex flex-column p-4">
                                 <div class="mb-auto">
-                                    <h5 class="card-title fw-bold text-center mb-3">Live Stream & Field Comms</h5>
+                                    <h5 class="card-title fw-bold text-center mb-3">
+                                        Live Stream & Field Comms
+                                    </h5>
                                     <p class="card-text small text-muted mb-0">
-                                        Chasers need strong satellite internet and rugged cameras to broadcast live data
-                                        and video safely from inside the core.
+                                        Chasers need strong satellite internet and rugged cameras
+                                        to broadcast live data and video safely from inside the
+                                        core.
                                     </p>
                                 </div>
 
                                 <div class="mt-4">
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="commsTier"
                                             value="10" checked />
-                                        <span><strong>$10</strong> - Covers one hour of mobile satellite data.</span>
+                                        <span><strong>$10</strong> - Covers one hour of mobile
+                                            satellite data.</span>
                                     </label>
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="commsTier"
                                             value="25" />
-                                        <span><strong>$25</strong> - Buys a waterproof external camera mount.</span>
+                                        <span><strong>$25</strong> - Buys a waterproof external
+                                            camera mount.</span>
                                     </label>
                                     <label
                                         class="list-group-item list-group-item-action d-flex align-items-center gap-3 small rounded border mb-2 p-2"
-                                        style="height: 85px;">
+                                        style="height: 85px">
                                         <input class="form-check-input flex-shrink-0" type="radio" name="commsTier"
                                             value="80" />
-                                        <span><strong>$80</strong> - Funds an upgraded heavy-duty signal antenna.</span>
+                                        <span><strong>$80</strong> - Funds an upgraded heavy-duty
+                                            signal antenna.</span>
                                     </label>
                                 </div>
 
-                                <button class="btn btn-danger w-100 mt-3 fw-bold py-2">Donate</button>
+                                <button class="btn btn-danger w-100 mt-3 fw-bold py-2">
+                                    Donate
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -589,10 +737,13 @@
                         <div class="card h-100 shadow-sm border">
                             <div class="card-body d-flex flex-column p-4">
                                 <div class="mb-auto">
-                                    <h5 class="card-title fw-bold text-center mb-3">Custom Donation</h5>
+                                    <h5 class="card-title fw-bold text-center mb-3">
+                                        Custom Donation
+                                    </h5>
                                     <p class="card-text small text-muted text-center mb-0">
-                                        Want to contribute a specific amount? Enter your custom donation below to
-                                        support our overall mission, vehicle maintenance, and scientific research.
+                                        Want to contribute a specific amount? Enter your custom
+                                        donation below to support our overall mission, vehicle
+                                        maintenance, and scientific research.
                                     </p>
                                 </div>
 
@@ -606,18 +757,72 @@
                                     </div>
                                 </div>
 
-                                <button class="btn btn-danger w-100 mt-4 fw-bold py-2">Donate</button>
+                                <button class="btn btn-danger w-100 mt-4 fw-bold py-2">
+                                    Donate
+                                </button>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </header>
 
-        <footer class="bg-dark text-white text-center py-3 mt-auto">
-            <p class="mb-0">© 2026 InterceptInfo - Storm Chasing Database</p>
+        <footer class="bg-dark text-white py-5 mt-auto border-top border-secondary">
+            <div class="container-fluid px-4 px-md-5">
+                <div class="row g-4 text-start">
+                    <div class="col-lg-4 col-md-6">
+                        <h6 class="text-uppercase fw-bold mb-3 text-light">Company</h6>
+                        <p class="small text-white-50 mb-3 pe-md-4">
+                            InterceptInfo is a dedicated database tracking the world's most
+                            advanced storm intercept vehicles. We document the engineering,
+                            history, and active status of the heavily modified machines
+                            built to survive extreme weather.
+                        </p>
+                        <a href="About.html"
+                            class="text-white-50 text-decoration-none small fw-semibold hover-white">About Us &rarr;</a>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="text-uppercase fw-bold mb-3 text-light">Resources</h6>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2">
+                                <a href="FAQ.html" class="text-white-50 text-decoration-none hover-white">FAQ</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="PrivacyPolicy.html"
+                                    class="text-white-50 text-decoration-none hover-white">Privacy Policy</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="TermsOfService.html"
+                                    class="text-white-50 text-decoration-none hover-white">Terms of Service</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://bit-jpg.github.io/a-website/rusty.html"
+                                    class="text-white-50 text-decoration-none hover-white">Special Mention</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="text-uppercase fw-bold mb-3 text-light">Contact</h6>
+                        <ul class="list-unstyled small text-white-50">
+                            <li class="mb-2 text-light fw-semibold">
+                                InterceptInfo Administration
+                            </li>
+                            <li class="mb-2">
+                                123 Storm Chaser Blvd.<br />Tornado Alley, TX 79001
+                            </li>
+                            <li class="mb-2">Phone: +1 (555) 019-8472</li>
+                            <li class="mb-2">Email: contact@interceptinfo.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 text-lg-end">
+                        <p class="small text-white-50 mb-1">© 2026 InterceptInfo</p>
+                        <p class="small text-white-50">All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 
@@ -629,25 +834,35 @@
         }
 
         function getSystemTheme() {
-            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            return window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
         }
 
         function applyTheme(theme) {
-            if (theme === 'system') {
-                document.documentElement.setAttribute('data-bs-theme', getSystemTheme());
+            if (theme === "system") {
+                document.documentElement.setAttribute(
+                    "data-bs-theme",
+                    getSystemTheme(),
+                );
             } else {
-                document.documentElement.setAttribute('data-bs-theme', theme);
+                document.documentElement.setAttribute("data-bs-theme", theme);
             }
         }
 
-        const savedTheme = localStorage.getItem('user-theme') || 'system';
+        const savedTheme = localStorage.getItem("user-theme") || "system";
         applyTheme(savedTheme);
 
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-            if (localStorage.getItem('user-theme') === 'system' || !localStorage.getItem('user-theme')) {
-                applyTheme('system');
-            }
-        });
+        window
+            .matchMedia("(prefers-color-scheme: dark)")
+            .addEventListener("change", () => {
+                if (
+                    localStorage.getItem("user-theme") === "system" ||
+                    !localStorage.getItem("user-theme")
+                ) {
+                    applyTheme("system");
+                }
+            });
     </script>
 </body>
 
