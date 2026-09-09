@@ -771,7 +771,6 @@
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content overflow-hidden border-0 shadow-lg">
-
                     <div id="modalBg" class="position-relative p-5 text-center text-white" style="
                 background-size: cover;
                 background-position: center;
@@ -900,7 +899,6 @@
             });
 
         document.addEventListener("DOMContentLoaded", () => {
-
             const donationImages = [
                 "images/Grid/tiv-2-build-photos-v0-7azoa8n2m9sd1.jpg",
                 "images/Grid/TornadoAlley-web.jpg",
@@ -930,7 +928,6 @@
                         let amount = 0;
 
                         if (card) {
-
                             const cardTitle = card.querySelector(".card-title");
                             if (cardTitle) {
                                 categoryName = cardTitle.innerText.trim();
@@ -939,10 +936,8 @@
                             const cardImg = card.querySelector(".card-img-top");
 
                             if (cardImg) {
-
                                 bgImage = cardImg.getAttribute("src");
                             } else {
-
                                 const randomIndex = Math.floor(
                                     Math.random() * donationImages.length,
                                 );
@@ -963,7 +958,6 @@
 
                                 customInput.value = "";
                             } else {
-
                                 const checkedRadio = card.querySelector(
                                     'input[type="radio"]:checked',
                                 );
