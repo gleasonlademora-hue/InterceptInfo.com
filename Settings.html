@@ -11,6 +11,7 @@
             scroll-behavior: smooth;
         }
     </style>
+    <script src="JavaScript/Theme.js"></script>
 </head>
 
 <body>
@@ -152,48 +153,7 @@
             </div>
         </footer>
     </div>
-
-    <script>
-        const themeSelect = document.getElementById("themeSelect");
-
-        function getSystemTheme() {
-            return window.matchMedia("(prefers-color-scheme: dark)").matches
-                ? "dark"
-                : "light";
-        }
-
-        function applyTheme(theme) {
-            if (theme === "system") {
-                document.documentElement.setAttribute(
-                    "data-bs-theme",
-                    getSystemTheme(),
-                );
-            } else {
-                document.documentElement.setAttribute("data-bs-theme", theme);
-            }
-        }
-
-        const savedTheme = localStorage.getItem("user-theme") || "system";
-        themeSelect.value = savedTheme;
-        applyTheme(savedTheme);
-
-        themeSelect.addEventListener("change", (e) => {
-            const selectedTheme = e.target.value;
-            localStorage.setItem("user-theme", selectedTheme);
-            applyTheme(selectedTheme);
-        });
-
-        window
-            .matchMedia("(prefers-color-scheme: dark)")
-            .addEventListener("change", () => {
-                if (
-                    localStorage.getItem("user-theme") === "system" ||
-                    !localStorage.getItem("user-theme")
-                ) {
-                    applyTheme("system");
-                }
-            });
-    </script>
+    <script src="JavaScript/Settings.js"></script>
 </body>
 
 </html>

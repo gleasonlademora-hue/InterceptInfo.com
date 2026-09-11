@@ -11,6 +11,7 @@
             scroll-behavior: smooth;
         }
     </style>
+    <script src="JavaScript/Theme.js"></script>
 </head>
 
 <body>
@@ -859,124 +860,8 @@
             </div>
         </footer>
     </div>
-
-    <script>
-        function activateTab(tabId) {
-            var tabTriggerEl = document.getElementById(tabId);
-            var tab = bootstrap.Tab.getOrCreateInstance(tabTriggerEl);
-            tab.show();
-        }
-
-        function getSystemTheme() {
-            return window.matchMedia("(prefers-color-scheme: dark)").matches
-                ? "dark"
-                : "light";
-        }
-
-        function applyTheme(theme) {
-            if (theme === "system") {
-                document.documentElement.setAttribute(
-                    "data-bs-theme",
-                    getSystemTheme(),
-                );
-            } else {
-                document.documentElement.setAttribute("data-bs-theme", theme);
-            }
-        }
-
-        const savedTheme = localStorage.getItem("user-theme") || "system";
-        applyTheme(savedTheme);
-
-        window
-            .matchMedia("(prefers-color-scheme: dark)")
-            .addEventListener("change", () => {
-                if (
-                    localStorage.getItem("user-theme") === "system" ||
-                    !localStorage.getItem("user-theme")
-                ) {
-                    applyTheme("system");
-                }
-            });
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const donationImages = [
-                "images/Grid/tiv-2-build-photos-v0-7azoa8n2m9sd1.jpg",
-                "images/Grid/TornadoAlley-web.jpg",
-                "images/Grid/GettyImages-89510934.jpg",
-                "images/Grid/images.jpg",
-                "images/Special/ROSTY.jpg",
-            ];
-
-            const thankYouModalEl = document.getElementById("thankYouModal");
-
-            if (typeof bootstrap !== "undefined" && thankYouModalEl) {
-                const thankYouModal = new bootstrap.Modal(thankYouModalEl);
-                const modalBg = document.getElementById("modalBg");
-                const donationDetails = document.getElementById("donationDetails");
-
-                const donateButtons = document.querySelectorAll(
-                    "#donations .btn-danger",
-                );
-
-                donateButtons.forEach((button) => {
-                    button.addEventListener("click", function (e) {
-                        e.preventDefault();
-
-                        const card = this.closest(".card");
-                        let bgImage = "";
-                        let categoryName = "Custom Donation";
-                        let amount = 0;
-
-                        if (card) {
-                            const cardTitle = card.querySelector(".card-title");
-                            if (cardTitle) {
-                                categoryName = cardTitle.innerText.trim();
-                            }
-
-                            const cardImg = card.querySelector(".card-img-top");
-
-                            if (cardImg) {
-                                bgImage = cardImg.getAttribute("src");
-                            } else {
-                                const randomIndex = Math.floor(
-                                    Math.random() * donationImages.length,
-                                );
-                                bgImage = donationImages[randomIndex];
-                            }
-
-                            const customInput = card.querySelector(
-                                'input[name="customAmount"]',
-                            );
-
-                            if (customInput) {
-                                amount = parseInt(customInput.value);
-
-                                if (!amount || amount <= 0) {
-                                    alert("Please enter a valid custom donation amount.");
-                                    return;
-                                }
-
-                                customInput.value = "";
-                            } else {
-                                const checkedRadio = card.querySelector(
-                                    'input[type="radio"]:checked',
-                                );
-                                if (checkedRadio) {
-                                    amount = checkedRadio.value;
-                                }
-                            }
-                        }
-
-                        modalBg.style.backgroundImage = `url('${bgImage}')`;
-
-                        donationDetails.innerText = `Fund Supported: ${categoryName} \n Donation Amount: $${amount}.00`;
-
-                        thankYouModal.show();
-                    });
-                });
-            }
-        });
-    </script>
+    <script src="JavaScript/Tabs.js"></script>
+    <script src="JavaScript/Donations.js"></script>
 </body>
 
 </html>
