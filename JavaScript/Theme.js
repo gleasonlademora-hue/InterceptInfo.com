@@ -1,4 +1,3 @@
-// theme.js
 function getSystemTheme() {
     return window.matchMedia("(prefers-color-scheme: dark)").matches
         ? "dark"
@@ -16,11 +15,9 @@ function applyTheme(theme) {
     }
 }
 
-// Apply the theme on initial load
 const savedTheme = localStorage.getItem("user-theme") || "system";
 applyTheme(savedTheme);
 
-// Listen for system theme changes
 window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", () => {

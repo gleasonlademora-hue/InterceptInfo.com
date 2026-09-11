@@ -1,4 +1,3 @@
-// donations.js
 document.addEventListener("DOMContentLoaded", () => {
     const donationImages = [
         "images/Grid/tiv-2-build-photos-v0-7azoa8n2m9sd1.jpg",
