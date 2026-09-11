@@ -54,7 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         customInput.value = "";
                     } else {
-                        const checkedRadio = card.querySelector('input[type="radio"]:checked');
+                        const checkedRadio = card.querySelector(
+                            'input[type="radio"]:checked',
+                        );
                         if (checkedRadio) {
                             amount = checkedRadio.value;
                         }

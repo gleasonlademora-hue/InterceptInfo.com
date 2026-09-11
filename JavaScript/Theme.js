@@ -6,10 +6,7 @@ function getSystemTheme() {
 
 function applyTheme(theme) {
     if (theme === "system") {
-        document.documentElement.setAttribute(
-            "data-bs-theme",
-            getSystemTheme(),
-        );
+        document.documentElement.setAttribute("data-bs-theme", getSystemTheme());
     } else {
         document.documentElement.setAttribute("data-bs-theme", theme);
     }
