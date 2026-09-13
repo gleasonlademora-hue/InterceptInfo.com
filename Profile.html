@@ -3,173 +3,124 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InterceptInfo - About Us</title>
+    <title>InterceptInfo - Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="JavaScript/Theme.js"></script>
     <script src="JavaScript/Registration.js"></script>
     <script src="JavaScript/Auth.js"></script>
+    <link rel="stylesheet" href="CSS/Registration.css" />
     <style>
         html {
             scroll-behavior: smooth;
         }
 
-        .hero-section {
-            background:
-                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-                url("images/Carosel/Dom3.jpg") center/cover no-repeat;
-            color: white;
-        }
-
-        .text-justify {
-            text-align: justify;
+        .profile-header {
+            background-color: var(--bs-tertiary-bg);
+            border-radius: 0.5rem;
         }
     </style>
-    <link rel="stylesheet" href="CSS/Registration.css" />
 </head>
 
 <body class="d-flex flex-column min-vh-100 p-0">
-    <header>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <div class="container-fluid">
-                <img src="images/Logo/be207ecd2a24e89612dbcf218e402bb2.jpg" alt="InterceptInfo Logo" style="width: 40px"
-                    class="rounded-pill" />
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item border rounded m-1">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item border rounded m-1">
-                            <a class="nav-link" href="index.html#database">Active Vehicles</a>
-                        </li>
-                        <li class="nav-item border rounded m-1">
-                            <a class="nav-link" href="index.html#database">Inactive Vehicles</a>
-                        </li>
-                        <li class="nav-item border rounded m-1">
-                            <a class="nav-link" href="index.html#history">History</a>
-                        </li>
-                        <li class="nav-item border rounded m-1">
-                            <a class="nav-link" href="index.html#donations">Donations</a>
-                        </li>
-                    </ul>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <img src="images/Logo/be207ecd2a24e89612dbcf218e402bb2.jpg" alt="InterceptInfo Logo" style="width: 40px"
+                class="rounded-pill" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+                aria-label="Toggle navigation" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item border rounded m-1">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item border rounded m-1">
+                        <a class="nav-link" href="index.html#database">Active Vehicles</a>
+                    </li>
+                    <li class="nav-item border rounded m-1">
+                        <a class="nav-link" href="index.html#database">Inactive Vehicles</a>
+                    </li>
+                    <li class="nav-item border rounded m-1">
+                        <a class="nav-link" href="index.html#history">History</a>
+                    </li>
+                    <li class="nav-item border rounded m-1">
+                        <a class="nav-link" href="index.html#donations">Donations</a>
+                    </li>
+                </ul>
 
-                    <ul class="navbar-nav ms-auto align-items-center">
-                        <li class="nav-item m-1">
-                            <a class="nav-link" href="Profile.html" title="Profile">
-                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                    <path fill-rule="evenodd"
-                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                </svg>
-                            </a>
-                        </li>
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item m-1">
+                        <a class="nav-link active" href="Profile.html" title="Profile">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </svg>
+                        </a>
+                    </li>
 
-                        <li class="nav-item dropdown m-1">
-                            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                &#9776;
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-                                <li>
-                                    <a class="dropdown-item" href="Settings.html">Settings</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#" id="authToggleBtn">Login</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="flex-grow-1">
-        <section class="hero-section py-5 text-center">
-            <div class="container py-4">
-                <h1 class="display-5 fw-bold mb-4">About InterceptInfo</h1>
-                <p class="lead mx-auto text-light" style="max-width: 800px">
-                    Have you ever wondered what it takes to drive straight into the
-                    heart of a monster? At InterceptInfo, we are endlessly fascinated by
-                    the intersection of extreme weather and unstoppable automotive
-                    engineering. We are the premier digital database dedicated
-                    exclusively to storm intercept vehicles, the heavily armored,
-                    purpose-built machines designed to withstand nature's most violent
-                    fury.
-                </p>
-            </div>
-        </section>
-
-        <div class="container my-5">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <h3 class="fw-bold border-bottom pb-2 mb-3">The Story & Origin</h3>
-                    <p class="text-justify text-body-secondary">
-                        InterceptInfo began with a singular, awe-inspiring moment:
-                        watching the original Tornado Intercept Vehicle (TIV-1) capture
-                        groundbreaking IMAX footage from inside a twister. We realized
-                        that while the brave meteorologists and filmmakers inside these
-                        machines often receive the spotlight, the vehicles themselves are
-                        truly unsung heroes.
-                    </p>
-                </div>
-
-                <div class="col-lg-6">
-                    <h3 class="fw-bold border-bottom pb-2 mb-3">
-                        Methodology & Curation
-                    </h3>
-                    <p class="text-justify text-body-secondary">
-                        Compiling the data for InterceptInfo requires the same relentless
-                        dedication as tracking a supercell across the Great Plains. Our
-                        methodology relies on meticulous research, cross-referencing
-                        public records, and analyzing thousands of hours of chase footage.
-                    </p>
-                </div>
-
-                <div class="col-lg-6">
-                    <h3 class="fw-bold border-bottom pb-2 mb-3">
-                        Our Value Proposition
-                    </h3>
-                    <p class="text-justify text-body-secondary">
-                        InterceptInfo offers unparalleled value by expertly bridging the
-                        gap between extreme meteorology and heavy-duty automotive
-                        engineering. For severe weather enthusiasts, we provide a
-                        definitive, one-stop resource to track operational status.
-                    </p>
-                </div>
-
-                <div class="col-lg-6">
-                    <h3 class="fw-bold border-bottom pb-2 mb-3">
-                        The Team Behind the Data
-                    </h3>
-                    <p class="text-justify text-body-secondary">
-                        Behind the InterceptInfo project is a small, fiercely dedicated
-                        team of self-proclaimed weather nerds and mechanical enthusiasts.
-                        Based just outside Tornado Alley, our creators grew up watching
-                        storm chasers on television.
-                    </p>
-                </div>
+                    <li class="nav-item dropdown m-1">
+                        <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            &#9776;
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                            <li>
+                                <a class="dropdown-item" href="Settings.html">Settings</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" id="authToggleBtn">Login</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="bg-body-tertiary py-5 border-top border-bottom shadow-sm">
-            <div class="container text-center">
-                <h3 class="fw-bold mb-3">Join the Intercept Mission</h3>
-                <p class="text-body-secondary mx-auto mb-4" style="max-width: 600px">
-                    Are you ready to dive deeper into the thrilling world of extreme
-                    weather engineering? Explore our comprehensive database or support
-                    our field teams.
-                </p>
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="index.html#database" class="btn btn-dark fw-bold px-4 py-2">View Database</a>
-                    <a href="index.html#donations" class="btn btn-danger fw-bold px-4 py-2">Support the Mission</a>
+    <main class="container my-5 flex-grow-1">
+        <h2 class="fw-bold mb-4">User Profile</h2>
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="card shadow-sm border profile-header p-4 text-center">
+                    <div class="mb-3">
+                        <div class="bg-secondary rounded-circle d-inline-flex align-items-center justify-content-center text-white"
+                            style="width: 120px; height: 120px; font-size: 3rem">
+                            👤
+                        </div>
+                    </div>
+                    <h4 class="fw-bold" id="profileName">Guest User</h4>
+                    <p class="text-muted mb-1" id="profileRole">Role: Observer</p>
+                    <p class="small text-muted" id="profileCompany">Company: N/A</p>
+                    <hr />
+                    <div class="text-start small">
+                        <p class="mb-1">
+                            <strong>Language:</strong> <span id="profileLang">English</span>
+                        </p>
+                        <p class="mb-1"><strong>Member Since:</strong> 2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <h4 class="fw-bold border-bottom pb-2 mb-4">Donation History</h4>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle shadow-sm border rounded overflow-hidden">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Date</th>
+                                <th>Category</th>
+                                <th>Tier Description</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="donationHistoryBody"></tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -425,6 +376,7 @@
             </div>
         </div>
     </footer>
+    <script src="JavaScript/Profile.js"></script>
 </body>
 
 </html>

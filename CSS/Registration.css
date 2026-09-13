@@ -1,0 +1,50 @@
+.registration-bg-slider {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(12px) brightness(0.7);
+    animation: bgCrossfade 24s infinite alternate ease-in-out;
+}
+
+.glass-panel {
+    background: rgba(var(--bs-body-bg-rgb), 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+[data-bs-theme="dark"] .custom-invert {
+    filter: invert(1);
+}
+
+@keyframes bgCrossfade {
+
+    0%,
+    20% {
+        background-image: url("../images/Carosel/Tiv1.jpg");
+    }
+
+    25%,
+    45% {
+        background-image: url("../images/Carosel/Tiv2.jpg");
+    }
+
+    50%,
+    70% {
+        background-image: url("../images/Carosel/Dom1.jpg");
+    }
+
+    75%,
+    100% {
+        background-image: url("../images/Carosel/Dom3.jpg");
+    }
+}
+
+.otp-input:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}

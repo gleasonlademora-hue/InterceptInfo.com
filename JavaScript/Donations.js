@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const thankYouModalEl = document.getElementById("thankYouModal");
 
     if (typeof bootstrap !== "undefined" && thankYouModalEl) {
-        const thankYouModal = new bootstrap.Modal(thankYouModalEl);
+        const thankYouModal = bootstrap.Modal.getOrCreateInstance(thankYouModalEl);
         const modalBg = document.getElementById("modalBg");
         const donationDetails = document.getElementById("donationDetails");
 
@@ -32,8 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
 
                     const cardImg = card.querySelector(".card-img-top");
-
-                    if (cardImg) {
+                    if (cardImg && cardImg.getAttribute("src")) {
                         bgImage = cardImg.getAttribute("src");
                     } else {
                         const randomIndex = Math.floor(
@@ -44,27 +43,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     const customInput = card.querySelector('input[name="customAmount"]');
 
-                    if (customInput) {
-                        amount = parseInt(customInput.value);
-
-                        if (!amount || amount <= 0) {
-                            alert("Please enter a valid custom donation amount.");
-                            return;
-                        }
-
-                        customInput.value = "";
+                    if (customInput && customInput.value) {
+                        amount = parseInt(customInput.value, 10);
                     } else {
                         const checkedRadio = card.querySelector(
                             'input[type="radio"]:checked',
                         );
                         if (checkedRadio) {
-                            amount = checkedRadio.value;
+                            amount = parseInt(checkedRadio.value, 10);
                         }
                     }
+
+                    if (isNaN(amount) || amount <= 0) {
+                        alert(
+                            "Please select or enter a valid donation amount greater than 0.",
+                        );
+                        return;
+                    }
+
+                    if (customInput) customInput.value = "";
                 }
 
-                modalBg.style.backgroundImage = `url('${bgImage}')`;
-                donationDetails.innerText = `Fund Supported: ${categoryName} \n Donation Amount: $${amount}.00`;
+                if (modalBg) {
+                    modalBg.style.backgroundImage = `url('${bgImage}')`;
+                }
+                if (donationDetails) {
+                    donationDetails.innerText = `Fund Supported: ${categoryName} \n Donation Amount: $${amount}.00`;
+                }
+
                 thankYouModal.show();
             });
         });
